@@ -12,16 +12,13 @@
 # $SLOTS        List of slot type names for the bot
 # $LAMBDA       Name of the Lambda fulfillment function for the bot
 #
-
 SLEEP=2
-
 # Delete TICKIT database if it exists
 if aws glue get-database --name $ATHENA_DB >xxx 2>&1
 then 
 	echo "Deleting Athena database $ATHENA_DB"
 	aws glue delete-database --name $ATHENA_DB >/dev/null
 fi
-
 # delete the bot if it exists
 echo -n "Checking for existing bot $BOT... " 
 if aws lex-models get-bot --name $BOT --version-or-alias '$LATEST' >/dev/null 2>&1
@@ -33,7 +30,6 @@ then
 else
     echo "not found."
 fi
-
 # delete the intents
 for i in $INTENTS
 do
@@ -48,7 +44,6 @@ do
         echo "not found"
     fi
 done
-
 # delete the custom slot types
 for i in $SLOTS
 do
@@ -62,8 +57,7 @@ do
     else
         echo "not found"
     fi
-done
- 
+done 
 # delete the lambda functions
 for i in $INTENTS
 do
