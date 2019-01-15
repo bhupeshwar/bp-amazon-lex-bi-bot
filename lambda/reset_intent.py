@@ -43,7 +43,7 @@ def lambda_handler(event, context):
 def reset_intent_handler(intent_request, session_attributes):
     session_attributes['greetingCount'] = '1'
     session_attributes['finishedCount'] = '0'
-    # don't alter session_attributes['lastIntent'], let BIBot remember the last used intent
+    # don't alter session_attributes['lastIntent'], let BIBot_BP remember the last used intent
 
     # Retrieve "remembered" slot values from session attributes
     slot_values = helpers.get_remembered_slot_values(None, session_attributes)

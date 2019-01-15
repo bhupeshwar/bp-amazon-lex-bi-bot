@@ -1,6 +1,6 @@
 {
         "name": "Goodbye_Intent",
-        "description": "Let BIBot know you're done",
+        "description": "Let BIBot_BP know you're done",
         "conclusionStatement": {
           "messages": [
             {

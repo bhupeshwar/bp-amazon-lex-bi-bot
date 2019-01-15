@@ -1,6 +1,6 @@
 {
         "name": "Hello_Intent",
-        "description": "Say hello to BIBot",
+        "description": "Say hello to BIBot_BP",
         "conclusionStatement": {
           "messages": [
             {
@@ -28,7 +28,7 @@
           "hey there",
           "hi",
           "hi there",
-          "BIBot",
+          "BIBot_BP",
           "yo",
           "you there"
         ],

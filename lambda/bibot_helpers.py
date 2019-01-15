@@ -42,8 +42,8 @@ def get_bibot_config():
     except KeyError:
         return 'I have a configuration error - please set up the Athena database information.'
 
-    logger.debug('<<BIBot>> athena_db = ' + ATHENA_DB)
-    logger.debug('<<BIBot>> athena_output_location = ' + ATHENA_OUTPUT_LOCATION)
+    logger.debug('<<BIBot_BP>> athena_db = ' + ATHENA_DB)
+    logger.debug('<<BIBot_BP>> athena_output_location = ' + ATHENA_OUTPUT_LOCATION)
 
 
 def execute_athena_query(query_string):

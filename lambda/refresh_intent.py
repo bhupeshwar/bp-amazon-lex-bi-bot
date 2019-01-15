@@ -29,7 +29,7 @@ import bibot_userexits as userexits
 REFRESH_QUERY = 'SELECT DISTINCT event_name from event ORDER BY event_name'
 REFRESH_SLOT = 'event_name'
 REFRESH_INTENT = 'Compare_Intent'
-REFRESH_BOT = 'BIBot'
+REFRESH_BOT = 'BIBot_BP'
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
