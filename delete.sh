@@ -1,11 +1,9 @@
 #!/bin/bash
-
 #
 # Deletes the bot, intents, and custom slot types
 # in reverse order of build: first the bot, then
 # the intents, then the slot types.
 #
-
 #
 # Environment variables to be set in the CodeBuild project
 #
